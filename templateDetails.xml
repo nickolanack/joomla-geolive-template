@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 3//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>geolive</name>
+	<author>Emily Millard</author>
+	<authorEmail>emilyloumillard@gmail.com</authorEmail>
+	<authorUrl>geolive.ca</authorUrl>
+	<copyright>Copyright (C) 2005 - 2013 Nick Blackwell Software, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.0</version>
+	<description>Responsive Template for Joomla</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>fonts</folder>
+		<folder>js</folder>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+		<position>top</position>
+		<position>top-menu</position>
+		<position>bottom</position>
+		<position>bottom-menu</position>
+	</positions>
+		
+</extension>

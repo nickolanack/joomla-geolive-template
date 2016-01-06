@@ -1,0 +1,385 @@
+@CHARSET "UTF-8";
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+.maincontent {
+	margin-top: 121px;
+}
+
+button.btn.btn-primary {
+	margin: 8px 0;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 176px;
+}
+#footer {
+ 
+  bottom: 0;
+  width: 100%;
+  height: 176px;
+  background-color: #f5f5f5;
+}
+
+.item_464 #footer {
+	display: none;
+}
+
+@media ( max-width: 991px) {
+	body {
+		margin-bottom:207px
+	}
+	
+	#footer {
+		height: 207px;
+	}
+}
+
+@media ( max-width: 480px) {
+	body {
+		margin-bottom: 357px;
+	}
+	
+	#footer {
+		height: 375px;
+	}
+}
+
+#footer ul {
+	list-style-type: none;
+	padding:0;
+}
+
+#footer li {
+	margin-top: 1px;
+}
+
+div.social {
+	text-align: center;
+}
+
+.social img {
+	margin: 0 8px;
+}
+
+@media ( min-width : 481px) {
+	div.social {
+		margin-top:44px;
+	}
+}
+
+div.col.span_1_of_3.logo {
+	text-align: center;
+	margin-top: 44px;
+}
+
+/*Alert bar
+---------------------------------------------------- */
+div.alert {
+	margin-top: 82px;
+	background-color: #fcf8e3;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  text-shadow:none;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+/*     padding-right: 15px;
+    padding-left:  15px; */
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
+/* Sign in & sign up 
+-----------------------------------------------*/
+
+li.signup.signin-signup.hide-signup {
+	display: none;
+}
+
+.signin-signup {
+	cursor: pointer;
+}
+
+.navbar-nav>li.signup {
+	margin-right: 0;
+}
+
+.navbar-nav>li.signin {
+	margin-right:0;
+}
+
+@media (min-width:768px) {
+	a.signin-signup {
+		background-color: #e1e1e1;
+		border-radius: 2px;
+		border: 1px solid;
+		border-color: rgba(255,255,255,0.5);
+	}	
+}
+
+@media (max-width: 767px) {
+	a.signin-signup {
+		margin-left: 2em;
+	}
+	li #signin {
+		border-top:2px solid #2d83c9;
+	}
+}
+
+/* Styling Sign-in & Sign-up Pages/Popups
+--------------------------------------------- */
+
+/* socials backgrounds ===================== */
+
+ul.hs_social_list li.socials span.icon {
+	background:transparent;
+}
+
+ul.hs_social_list li.socials.facebook span.icon {
+	background-image: url("/templates/geolive/images/facebook-logo.png");
+	background-size: 30px;
+	background-position: 0;
+}
+
+ul.hs_social_list li.socials.google span.icon {
+	background-image: url("/templates/geolive/images/google+.png");
+	background-size: 30px;
+	background-position: 0;
+}
+
+/* alignment ===================== */
+
+div.userdata ul {
+	padding: 0;
+}
+
+div.userdata {
+	padding: 0 20px;
+}
+
+.userdata-table {
+	margin:0 20px;
+}
+
+.userdata-table td {
+	vertical-align: top;
+}
+
+label.element-invisible {
+	display: none;
+}
+
+div.input-prepend {
+	margin-bottom: 5px;
+}
+
+div#form-login-remember {
+	display:none;
+}
+
+ul.unstyled li:nth-child(1) {
+	display: none;
+}
+
+ul.unstyled {
+	list-style-type: none;
+}
+
+/* #form-login-submit {
+	margin: 8px 0;
+} */
+
+.signup-text {
+	padding-left:5px;
+}
+
+/* Changing the text ================ */
+
+.signin-social ul.hs_social_list li.socials.facebook span.name {
+    font-size: 0;
+}
+
+.signin-social ul.hs_social_list li.socials.google span.name {
+    font-size: 0;
+}
+
+.signup-social ul.hs_social_list li.socials.facebook span.name {
+    font-size: 0;
+}
+
+.signup-social ul.hs_social_list li.socials.google span.name {
+    font-size: 0;
+}
+
+.signin-social  ul.hs_social_list li.socials.facebook span.name:after {
+    font-size: 14px;
+    content: "Sign in with Facebook";
+}
+
+.signin-social ul.hs_social_list li.socials.google span.name:after {
+    font-size: 14px;
+    content: "Sign in with Google+";
+}
+
+.signup-social  ul.hs_social_list li.socials.facebook span.name:after {
+    font-size: 14px;
+    content: "Sign up using Facebook";
+}
+
+.signup-social ul.hs_social_list li.socials.google span.name:after {
+    font-size: 14px;
+    content: "Sign up using Google+";
+}
+
+#signin-social ul.hs_social_list li.socials.facebook span.name {
+    font-size: 0;
+}
+
+#signin-social ul.hs_social_list li.socials.google span.name {
+    font-size: 0;
+}
+
+#signup-social ul.hs_social_list li.socials.facebook span.name {
+    font-size: 0;
+}
+
+#signup-social ul.hs_social_list li.socials.google span.name {
+    font-size: 0;
+}
+
+#signin-social  ul.hs_social_list li.socials.facebook span.name:after {
+    font-size: 14px;
+    content: "Sign in with Facebook";
+}
+
+#signin-social ul.hs_social_list li.socials.google span.name:after {
+    font-size: 14px;
+    content: "Sign in with Google+";
+}
+
+#signup-social  ul.hs_social_list li.socials.facebook span.name:after {
+    font-size: 14px;
+    content: "Sign up using Facebook";
+}
+
+#signup-social ul.hs_social_list li.socials.google span.name:after {
+    font-size: 14px;
+    content: "Sign up using Google+";
+}
+
